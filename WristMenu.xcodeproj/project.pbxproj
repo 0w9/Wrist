@@ -11,6 +11,7 @@
 		DB2DBADA27D76E0000C2FF77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DBAD927D76E0000C2FF77 /* ContentView.swift */; };
 		DB2DBADC27D76E0700C2FF77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DBADB27D76E0700C2FF77 /* Assets.xcassets */; };
 		DB2DBADF27D76E0700C2FF77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DBADE27D76E0700C2FF77 /* Preview Assets.xcassets */; };
+		DB2DBAE827D76EDA00C2FF77 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DBAE727D76EDA00C2FF77 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		DB2DBADB27D76E0700C2FF77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2DBADE27D76E0700C2FF77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB2DBAE027D76E0700C2FF77 /* WristMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WristMenu.entitlements; sourceTree = "<group>"; };
+		DB2DBAE727D76EDA00C2FF77 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		DB2DBAE927D77B3B00C2FF77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,8 @@
 		DB2DBAD627D76E0000C2FF77 /* WristMenu */ = {
 			isa = PBXGroup;
 			children = (
+				DB2DBAE927D77B3B00C2FF77 /* Info.plist */,
+				DB2DBAE627D76ECA00C2FF77 /* Menu */,
 				DB2DBAD727D76E0000C2FF77 /* WristMenuApp.swift */,
 				DB2DBAD927D76E0000C2FF77 /* ContentView.swift */,
 				DB2DBADB27D76E0700C2FF77 /* Assets.xcassets */,
@@ -67,6 +72,14 @@
 				DB2DBADE27D76E0700C2FF77 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB2DBAE627D76ECA00C2FF77 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DB2DBAE727D76EDA00C2FF77 /* MenuView.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2DBADA27D76E0000C2FF77 /* ContentView.swift in Sources */,
+				DB2DBAE827D76EDA00C2FF77 /* MenuView.swift in Sources */,
 				DB2DBAD827D76E0000C2FF77 /* WristMenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +290,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WristMenu/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,6 +318,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WristMenu/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
